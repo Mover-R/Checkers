@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35919.96
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Сheckers", "Сheckers.csproj", "{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{886AC081-73C6-4B8B-B707-7746DD362823}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{886AC081-73C6-4B8B-B707-7746DD362823}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{886AC081-73C6-4B8B-B707-7746DD362823}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{886AC081-73C6-4B8B-B707-7746DD362823}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{886AC081-73C6-4B8B-B707-7746DD362823}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD2554A7-0A89-416B-AC97-E6849AB1F099}
+	EndGlobalSection
+EndGlobal

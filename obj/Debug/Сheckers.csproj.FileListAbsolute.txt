@@ -1,0 +1,15 @@
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.csproj.AssemblyReference.cache
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.Properties.Resources.resources
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.csproj.GenerateResource.cache
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\Сheckers\bin\Debug\Сheckers.exe.config
+C:\Users\denis\source\repos\Сheckers\bin\Debug\Сheckers.exe
+C:\Users\denis\source\repos\Сheckers\bin\Debug\Сheckers.pdb
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.exe
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.pdb
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.GameWindow.resources
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.StartWindow.resources
+C:\Users\denis\source\repos\Сheckers\bin\Debug\Newtonsoft.Json.dll
+C:\Users\denis\source\repos\Сheckers\bin\Debug\Newtonsoft.Json.xml
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.csproj.Up2Date
+C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.InformationTable.resources

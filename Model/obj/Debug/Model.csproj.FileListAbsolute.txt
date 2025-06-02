@@ -1,0 +1,6 @@
+C:\Users\denis\source\repos\Сheckers\Model\bin\Debug\Model.dll
+C:\Users\denis\source\repos\Сheckers\Model\bin\Debug\Model.pdb
+C:\Users\denis\source\repos\Сheckers\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\denis\source\repos\Сheckers\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\denis\source\repos\Сheckers\Model\obj\Debug\Model.dll
+C:\Users\denis\source\repos\Сheckers\Model\obj\Debug\Model.pdb
