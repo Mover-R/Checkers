@@ -1,18 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
-using System.Security.Policy;
 using System.Text;
 using System.Threading.Tasks;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Windows.Forms;
-using System.Diagnostics;
 
-namespace Сheckers
+namespace Model
 {
-    public class GameState
+    public partial class GameState
     {
         public int Score { get; private set; }
         public int CountWhite { get; private set; }
@@ -60,7 +55,7 @@ namespace Сheckers
             CountWhite = cntWhite;
         }
 
-        public GameState(int[,] map, Dictionary<(int,int), Piece> pieces, bool whiteMove)
+        public GameState(int[,] map, Dictionary<(int, int), Piece> pieces, bool whiteMove)
         {
             Map = map;
             Pieces = pieces;
@@ -83,12 +78,13 @@ namespace Сheckers
 
         public void UpdateBoardMoves()
         {
-            for (int i = 0; i<Map.GetLength(0); i++)
+            for (int i = 0; i < Map.GetLength(0); i++)
             {
-                for (int j = 0; j<Map.GetLength(1); j++)
+                for (int j = 0; j < Map.GetLength(1); j++)
                 {
-                    if (Pieces.ContainsKey((i,j))) {
-                        var p = Pieces[(i,j)];
+                    if (Pieces.ContainsKey((i, j)))
+                    {
+                        var p = Pieces[(i, j)];
                         p.PossibleMoves(this);
                         p.PossibleEats(this);
                     }
@@ -164,7 +160,8 @@ namespace Сheckers
                 Map[to.row, to.col] = WhiteMove ? 1 : 2;
 
                 Promote(to);
-            } else
+            }
+            else
             {
                 int rowStep = Math.Sign(to.row - from.row);
                 int colStep = Math.Sign(to.col - from.col);
@@ -208,14 +205,6 @@ namespace Сheckers
             var p = new QueenChecker(Pieces[pos].Color, pos);
             Pieces.Remove(pos);
             Pieces[pos] = p;
-        }
-        public int CheckWin()
-        {
-            Debug.WriteLine($"{CanMove()}, {CountWhite}, {CountBlack}");
-            if (!CanMove()) return CountWhite - CountBlack > 0 ? 1 : 2;
-            if (CountWhite == 0) return 2;
-            else if (CountBlack == 0) return 1;
-            return 0;
         }
     }
 }

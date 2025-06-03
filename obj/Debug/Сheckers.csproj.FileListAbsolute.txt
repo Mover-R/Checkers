@@ -13,3 +13,5 @@ C:\Users\denis\source\repos\Сheckers\bin\Debug\Newtonsoft.Json.dll
 C:\Users\denis\source\repos\Сheckers\bin\Debug\Newtonsoft.Json.xml
 C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.csproj.Up2Date
 C:\Users\denis\source\repos\Сheckers\obj\Debug\Сheckers.InformationTable.resources
+C:\Users\denis\source\repos\Сheckers\bin\Debug\Model.dll
+C:\Users\denis\source\repos\Сheckers\bin\Debug\Model.pdb

@@ -26,7 +26,7 @@
       0,
       2,
       0,
-      2,
+      1,
       0,
       2
     ],
@@ -57,7 +57,7 @@
       0,
       1,
       0,
-      1,
+      0,
       0
     ],
     [
@@ -146,7 +146,7 @@
       "Type": "Man",
       "Row": 2,
       "Col": 5,
-      "Color": false
+      "Color": true
     },
     {
       "Type": "Man",
@@ -170,12 +170,6 @@
       "Type": "Man",
       "Row": 5,
       "Col": 4,
-      "Color": true
-    },
-    {
-      "Type": "Man",
-      "Row": 5,
-      "Col": 6,
       "Color": true
     },
     {
@@ -227,5 +221,5 @@
       "Color": true
     }
   ],
-  "WhiteMove": true
+  "WhiteMove": false
 }

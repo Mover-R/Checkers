@@ -49,7 +49,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FileSerializer.cs" />
     <Compile Include="StartWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,17 +61,12 @@
     <Compile Include="InformationTable.Designer.cs">
       <DependentUpon>InformationTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="IFileManager.cs" />
-    <Compile Include="Serializer.cs" />
-    <Compile Include="Suit.cs" />
     <Compile Include="GameWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GameWindow.Designer.cs">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="IPiece.cs" />
-    <Compile Include="Piece.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="GameWindow.resx">
