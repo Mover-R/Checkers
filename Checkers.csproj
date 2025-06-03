@@ -49,33 +49,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="StartWindow.cs">
+    <Compile Include="Checkers%28UI%29\Forms\StartWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="StartWindow.Designer.cs">
+    <Compile Include="Checkers%28UI%29\Forms\StartWindow.Designer.cs">
       <DependentUpon>StartWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="InformationTable.cs">
+    <Compile Include="Checkers%28UI%29\Forms\InformationTable.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InformationTable.Designer.cs">
+    <Compile Include="Checkers%28UI%29\Forms\InformationTable.Designer.cs">
       <DependentUpon>InformationTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="GameWindow.cs">
+    <Compile Include="Checkers%28UI%29\Forms\GameWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GameWindow.Designer.cs">
+    <Compile Include="Checkers%28UI%29\Forms\GameWindow.Designer.cs">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="Checkers%28UI%29\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="GameWindow.resx">
+    <EmbeddedResource Include="Checkers%28UI%29\Forms\GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="StartWindow.resx">
+    <EmbeddedResource Include="Checkers%28UI%29\Forms\StartWindow.resx">
       <DependentUpon>StartWindow.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InformationTable.resx">
+    <EmbeddedResource Include="Checkers%28UI%29\Forms\InformationTable.resx">
       <DependentUpon>InformationTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

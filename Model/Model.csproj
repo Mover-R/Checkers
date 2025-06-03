@@ -45,15 +45,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="FileSerializer.cs" />
-    <Compile Include="GameState.Core.cs" />
-    <Compile Include="GameState.WinConditions.cs" />
-    <Compile Include="IFileManager.cs" />
-    <Compile Include="IPiece.cs" />
-    <Compile Include="Piece.cs" />
+    <Compile Include="SaveLoad\FileSerializer.cs" />
+    <Compile Include="GameState\GameState.Core.cs" />
+    <Compile Include="GameState\GameState.WinConditions.cs" />
+    <Compile Include="SaveLoad\IFileManager.cs" />
+    <Compile Include="Piece\IPiece.cs" />
+    <Compile Include="Piece\Piece.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Serializer.cs" />
-    <Compile Include="Suit.cs" />
+    <Compile Include="SaveLoad\Serializer.cs" />
+    <Compile Include="Piece\Suit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

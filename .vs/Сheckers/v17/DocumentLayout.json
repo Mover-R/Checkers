@@ -1,38 +1,14 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\",
+  "WorkspaceRootPath": "C:\\Users\\denis\\source\\repos\\Checkers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\fileserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\fileserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|C:\\Users\\denis\\source\\repos\\Checkers\\README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|\u042D\u043B\u0435\u043C\u0435\u043D\u0442\u044B \u0440\u0435\u0448\u0435\u043D\u0438\u044F{754FC069-D67B-A9D7-50A1-8D1CA196D8F1}|solutionrelative:README.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\ifilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\ifilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\gamestate.core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\gamestate.core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\gamestate.winconditions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\gamestate.winconditions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\ipiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\ipiece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\piece.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\\u0441heckers\\model\\suit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\suit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\checkers\\model\\gamestate\\gamestate.core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\gamestate\\gamestate.core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,106 +26,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Suit.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\Suit.cs",
-              "RelativeDocumentMoniker": "Model\\Suit.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\Suit.cs",
-              "RelativeToolTip": "Model\\Suit.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:34:19.323Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Piece.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\Piece.cs",
-              "RelativeDocumentMoniker": "Model\\Piece.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\Piece.cs",
-              "RelativeToolTip": "Model\\Piece.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:34:15.968Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IPiece.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\IPiece.cs",
-              "RelativeDocumentMoniker": "Model\\IPiece.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\IPiece.cs",
-              "RelativeToolTip": "Model\\IPiece.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:34:11.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GameState.WinConditions.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\GameState.WinConditions.cs",
-              "RelativeDocumentMoniker": "Model\\GameState.WinConditions.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\GameState.WinConditions.cs",
-              "RelativeToolTip": "Model\\GameState.WinConditions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:34:09.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GameState.Core.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\GameState.Core.cs",
-              "RelativeDocumentMoniker": "Model\\GameState.Core.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\GameState.Core.cs",
-              "RelativeToolTip": "Model\\GameState.Core.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:34:00.356Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Serializer.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\Serializer.cs",
-              "RelativeDocumentMoniker": "Model\\Serializer.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\Serializer.cs",
-              "RelativeToolTip": "Model\\Serializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:32:06.232Z",
+              "DocumentIndex": 0,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-06-03T08:53:36.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "IFileManager.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\IFileManager.cs",
-              "RelativeDocumentMoniker": "Model\\IFileManager.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\IFileManager.cs",
-              "RelativeToolTip": "Model\\IFileManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "GameState.Core.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\GameState\\GameState.Core.cs",
+              "RelativeDocumentMoniker": "Model\\GameState\\GameState.Core.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\GameState\\GameState.Core.cs",
+              "RelativeToolTip": "Model\\GameState\\GameState.Core.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:32:00.141Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileSerializer.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\FileSerializer.cs",
-              "RelativeDocumentMoniker": "Model\\FileSerializer.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\\u0421heckers\\Model\\FileSerializer.cs",
-              "RelativeToolTip": "Model\\FileSerializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T08:31:53.857Z",
+              "WhenOpened": "2025-06-03T08:52:36.822Z",
               "EditorCaption": ""
             }
           ]
