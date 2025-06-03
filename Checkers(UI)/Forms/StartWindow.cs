@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Model.Data.SaveLoad;
 using Model;
 using Model.Core.Game.AI;
+using System.IO;
 
 namespace Сheckers
 {
@@ -20,7 +21,7 @@ namespace Сheckers
         public static Serializer serializerXML = new SerializeGameXML();
         private bool serializeJSON = true;
         private bool serializeXML = true;
-        public static string SaveFolderPath { get; private set; } = @"C:\Users\denis\source\repos\Сheckers\Saves";
+        public static string SaveFolderPath { get; private set; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Saves");
         public StartWindow()
         {
             InitializeComponent();
