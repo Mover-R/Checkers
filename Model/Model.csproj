@@ -45,15 +45,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="SaveLoad\FileSerializer.cs" />
-    <Compile Include="GameState\GameState.Core.cs" />
-    <Compile Include="GameState\GameState.WinConditions.cs" />
-    <Compile Include="SaveLoad\IFileManager.cs" />
-    <Compile Include="Piece\IPiece.cs" />
-    <Compile Include="Piece\Piece.cs" />
+    <Compile Include="Core\GameState\AI\AIGameState.cs" />
+    <Compile Include="Data\DTOs\GameStateDTO.cs" />
+    <Compile Include="Data\DTOs\PieceDTO.cs" />
+    <Compile Include="Core\GameState\GameHistory\GameState.History.cs" />
+    <Compile Include="Data\SaveLoad\FileSerializer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Core\GameState\GameState.Core.cs" />
+    <Compile Include="Core\GameState\GameState.WinConditions.cs" />
+    <Compile Include="Data\SaveLoad\IFileManager.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Core\Piece\IPiece.cs" />
+    <Compile Include="Core\Piece\Piece.cs" />
+    <Compile Include="Data\SaveLoad\SerializeGameJSON.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Data\SaveLoad\SerializeGameXML.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SaveLoad\Serializer.cs" />
-    <Compile Include="Piece\Suit.cs" />
+    <Compile Include="Data\SaveLoad\Serializer.cs">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Compile>
+    <Compile Include="Core\Piece\Suit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

@@ -1,4 +1,4 @@
-﻿using SaveLoad;
+﻿using Model.Data.SaveLoad;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -7,6 +7,10 @@ using System.Linq;
 using System.Net.NetworkInformation;
 using System.Windows.Forms;
 using Model;
+using Model.Core.Game;
+using Model.Core.Pieces;
+using Model.Core.Game.AI;
+using Сheckers.references;
 
 namespace Сheckers
 {
@@ -14,15 +18,17 @@ namespace Сheckers
     {
         private const int cellSize = 50;
         private const int mapSize = 8;
-        private readonly Image WhiteFigure;
-        private readonly Image BlackFigure;
-        private readonly Image WhiteFigureQueen;
-        private readonly Image BlackFigureQueen;
-        private readonly Image BackGround;
+        private readonly static Image WhiteFigure;
+        private readonly static Image BlackFigure;
+        private readonly static Image WhiteFigureQueen;
+        private readonly static Image BlackFigureQueen;
+        private readonly static Image BackGround;
 
         private GameState gameState;
         private Dictionary<(int, int), Button> buttons;
         private Button selectedButton = null;
+        private AIGameState AI;
+        public bool IsAiGame { get; set; }
         public int CellSize => cellSize;
         public int MapSize => mapSize;
         private void Form1_Load(object sender, EventArgs e)
@@ -31,22 +37,28 @@ namespace Сheckers
         }
         private void GameWindow_FormClosing(object sender, FormClosingEventArgs e)
         {
-            var fs = new Serializer();
-            fs.SerializeGame(this.gameState);
+            StartWindow.serializerJSON.SerializeGame(this.gameState);
+        }
+        static GameWindow()
+        {
+            string[] imagePaths = {
+                "references/whitechecker.png",
+                "references/blackchecker.png",
+                "references/whiteking.png",
+                "references/blackking.png"
+            };
+
+            WhiteFigure = Loader.LoadImage("references/whitechecker.png", cellSize);
+            BlackFigure = Loader.LoadImage("references/blackchecker.png", cellSize);
+            WhiteFigureQueen = Loader.LoadImage("references/whiteking.png", cellSize);
+            BlackFigureQueen = Loader.LoadImage("references/blackking.png", cellSize);
+
         }
         public GameWindow(GameState st)
         {
             InitializeComponent();
             this.FormClosed += (s, args) => {
             };
-            WhiteFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_white.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
-            BlackFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_black.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
-            WhiteFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_white_balanced.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
-            BlackFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_black_balanced.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
             this.Text = "Checkers";
             Init(st);
         }
@@ -54,30 +66,31 @@ namespace Сheckers
         {
             InitializeComponent();
             this.FormClosed += (s, args) => { };
-            WhiteFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_white.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
-            BlackFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_black.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
-            WhiteFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_white_balanced.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
-            BlackFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_black_balanced.png"),
-                                    new Size(cellSize - 1, cellSize - 1));
             this.Text = "Checkers";
             GameState st = new GameState();
             Init(st);
         }
-
+        public GameWindow(AIGameState ai)
+        {
+            InitializeComponent();
+            AI = ai;
+            this.FormClosed += (s, args) => { };
+            this.Text = "Checkers";
+            GameState st = new GameState();
+            Init(st);
+        }
         public void Init(GameState s)
         {
             buttons = new Dictionary<(int, int), Button>();
             gameState = s;
+            GameState.Add(gameState);
             gameState.UpdateBoardMoves();
             CreateMap();
         }
 
         public void CreateMap()
         {
-            this.Width = cellSize * (mapSize + 5); this.Height = cellSize * (mapSize + 2);
+            this.Width = cellSize * (mapSize + 8); this.Height = cellSize * (mapSize + 2);
             for (int i = 0; i < mapSize; i++)
             {
                 for (int j = 0; j < mapSize; j++)
@@ -135,7 +148,7 @@ namespace Сheckers
                 {
                     if (piece.Eats.Contains(pos))
                     {
-                        gameState.EatPiece(fromPos, pos);
+                        if (gameState.EatPiece(fromPos, pos)) InformationTable.ShowPromoteQueenForm();
                         gameState.UpdateBoardMoves();
                         var p = gameState.Pieces[pos];
                         ResetSelection();
@@ -148,7 +161,7 @@ namespace Сheckers
                         }
                     } else if (piece.Moves.Contains(pos))
                     {
-                        gameState.MovePiece(fromPos, pos);
+                        if (gameState.MovePiece(fromPos, pos)) InformationTable.ShowPromoteQueenForm();
                         ResetSelection();
                         gameState.SwitchPlayer();
                     }
@@ -160,6 +173,8 @@ namespace Сheckers
             }
             UpdateBoard();
             gameState.UpdateBoardMoves();
+            GameState.Add(gameState);
+            Debug.WriteLine(GameState.History.Count);
         }
 
         private void FirstClick((int row, int col) pos, Button b)
@@ -206,6 +221,12 @@ namespace Сheckers
         }
         private void UpdateBoard()
         {
+            if (IsAiGame)
+            {
+                Debug.WriteLine("ITS AI TIME");
+                AI = new AIGameState(gameState, true);
+                AI.MakeAIMove(gameState);
+            }
             foreach (var button in buttons.Values)
             {
                 button.Image = null;
@@ -224,6 +245,12 @@ namespace Сheckers
                     button.Image = piece.Color ? WhiteFigure : BlackFigure;
                 }
             }
+
+            WinInfo();
+            gameState.RemoveDraw();
+        }
+        private void WinInfo()
+        {
             switch (gameState.CheckWin())
             {
                 case 0: // Игра продолжается
@@ -247,8 +274,8 @@ namespace Сheckers
 
         private void SaveProgresClick(object sender, EventArgs e)
         {
-            var fs = new Serializer();
-            fs.SerializeGame(this.gameState);
+            Debug.WriteLine(StartWindow.SaveFolderPath);
+            StartWindow.serializerJSON.SerializeGame(this.gameState);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -256,5 +283,40 @@ namespace Сheckers
 
         }
 
+        private void ForwardClick(object sender, EventArgs e)
+        {
+            var st = GameState.Forward();
+            if (st != null)
+            {
+                Debug.WriteLine("GO Forward");
+                gameState = st;
+            }
+            UpdateBoard();
+            gameState.UpdateBoardMoves();
+        }
+
+        private void BackClick(object sender, EventArgs e)
+        {
+            var st = GameState.Back();
+            if (st != null)
+            {
+                Debug.WriteLine("GO Back");
+                gameState = st;
+            }
+            UpdateBoard();
+            gameState.UpdateBoardMoves();
+        }
+
+        private void OfferDrawWhite_Click(object sender, EventArgs e)
+        {
+            gameState.WhiteDraw();
+            WinInfo();
+        }
+
+        private void OfferDrawBlack_Click(object sender, EventArgs e)
+        {
+            gameState.BlackDraw();
+            WinInfo();
+        }
     }
 }

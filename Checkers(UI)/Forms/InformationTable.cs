@@ -48,5 +48,26 @@ namespace Сheckers
             endForm.Controls.Add(label);
             endForm.ShowDialog();
         }
+
+        public static void ShowPromoteQueenForm()
+        {
+            var Form = new InformationTable()
+            {
+                Text = "Yep Its Queen",
+                StartPosition = FormStartPosition.CenterScreen,
+                FormBorderStyle = FormBorderStyle.FixedDialog
+            };
+            var label = new Label()
+            {
+                Text = "Queen",
+                Font = new Font("Arial", 20, FontStyle.Bold),
+                AutoSize = true,
+                Dock = DockStyle.Fill,
+                TextAlign = ContentAlignment.MiddleCenter
+            };
+
+            Form.Controls.Add(label);
+            Form.ShowDialog();
+        }
     }
 }
