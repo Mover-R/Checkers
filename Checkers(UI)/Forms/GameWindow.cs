@@ -39,13 +39,13 @@ namespace Сheckers
             InitializeComponent();
             this.FormClosed += (s, args) => {
             };
-            WhiteFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\checker_white.png"),
+            WhiteFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_white.png"),
                                     new Size(cellSize - 1, cellSize - 1));
-            BlackFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\checker_black.png"),
+            BlackFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_black.png"),
                                     new Size(cellSize - 1, cellSize - 1));
-            WhiteFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\queen_white_balanced.png"),
+            WhiteFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_white_balanced.png"),
                                     new Size(cellSize - 1, cellSize - 1));
-            BlackFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\queen_black_balanced.png"),
+            BlackFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_black_balanced.png"),
                                     new Size(cellSize - 1, cellSize - 1));
             this.Text = "Checkers";
             Init(st);
@@ -54,13 +54,13 @@ namespace Сheckers
         {
             InitializeComponent();
             this.FormClosed += (s, args) => { };
-            WhiteFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\checker_white.png"),
+            WhiteFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_white.png"),
                                     new Size(cellSize - 1, cellSize - 1));
-            BlackFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\checker_black.png"),
+            BlackFigure = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\checker_black.png"),
                                     new Size(cellSize - 1, cellSize - 1));
-            WhiteFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\queen_white_balanced.png"),
+            WhiteFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_white_balanced.png"),
                                     new Size(cellSize - 1, cellSize - 1));
-            BlackFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Сheckers\references\queen_black_balanced.png"),
+            BlackFigureQueen = new Bitmap(new Bitmap(@"C:\Users\denis\source\repos\Checkers\references\queen_black_balanced.png"),
                                     new Size(cellSize - 1, cellSize - 1));
             this.Text = "Checkers";
             GameState st = new GameState();
