@@ -33,40 +33,55 @@ namespace Model.Core.Game.AI
 
         public bool IsAITurn => WhiteMove != _isPlayerWhite;
 
-        public void MakeAIMove(GameState state)
+        public void MakeAIMove()
         {
             if (!IsAITurn) return;
-            var allPossibleMoves = GetAllPossibleMoves(state);
+            var allPossibleMoves = GetAllPossibleMoves();
             Debug.WriteLine("MOOOOOVE");
-            if (allPossibleMoves.Count == 0)
+            if (allPossibleMoves.Item2.Count == 0)
             {
-                Debug.WriteLine($"{string.Join(", ", allPossibleMoves)}, NOOOOO");
+                //Debug.WriteLine($"{string.Join(", ", allPossibleMoves)}, NOOOOO");
                 return;
             }
 
-            var randomMove = allPossibleMoves[_random.Next(allPossibleMoves.Count)];
+            var randomMove = allPossibleMoves.Item2[_random.Next(allPossibleMoves.Item2.Count)];
             Debug.WriteLine(randomMove);
-            state.MovePiece(randomMove.from, randomMove.to);
-            state.SwitchPlayer();
+            if (!allPossibleMoves.Item1) this.MovePiece(randomMove.from, randomMove.to);
+            else
+            {
+                while (allPossibleMoves.Item1)
+                {
+                    this.EatPiece(randomMove.from, randomMove.to);
+                    this.UpdateBoardMoves();
+                    allPossibleMoves = GetAllPossibleMoves();
+                    randomMove = allPossibleMoves.Item2[_random.Next(allPossibleMoves.Item2.Count)];
+                }
+            }
+            this.SwitchPlayer();
         }
 
-        private List<((int, int) from, (int, int) to)> GetAllPossibleMoves(GameState s)
+        private (bool, List<((int, int) from, (int, int) to)>) GetAllPossibleMoves()
         {
+            this.UpdateBoardMoves();
             var eat = new List<((int, int) from, (int, int) to)>();
             var move = new List<((int, int) from, (int, int) to)>();
-            foreach (var p in s.Pieces.Values)
+            foreach (var p in this.Pieces.Values)
             {
                 if (p.Color == IsAITurn) continue;
                 Debug.WriteLine($"{p.Color} {p.Eats.Length} {p.Moves.Length}");
-                foreach (var m in p.Eats) eat.Add((p.Position, m));
+                foreach (var m in p.Eats)
+                {
+                    Debug.WriteLine(m);
+                    eat.Add((p.Position, m));
+                }
                 foreach (var m in p.Moves)
                 {
-                    Debug.WriteLine((p.Position, m));
+                    //Debug.WriteLine((p.Position, m));
                     move.Add((p.Position, m));
                 }
             }
             Debug.WriteLine($"{eat.Count}  {move.Count}  {string.Join(", ", eat)}  {string.Join(", ", move)}");
-            return eat.Count > 0 ? eat : move;
+            return (eat.Count > 0, eat.Count > 0 ? eat : move);
         }
 
         public int CalculateScore(bool forWhite)

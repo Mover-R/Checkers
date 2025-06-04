@@ -12,6 +12,8 @@ using Model.Data.SaveLoad;
 using Model;
 using Model.Core.Game.AI;
 using System.IO;
+using System.Runtime.CompilerServices;
+using Сheckers.references;
 
 namespace Сheckers
 {
@@ -21,11 +23,33 @@ namespace Сheckers
         public static Serializer serializerXML = new SerializeGameXML();
         private bool serializeJSON = true;
         private bool serializeXML = true;
+
+        private Bitmap NewGameImage;
+        private Bitmap ContinueGameImage;
+        private Bitmap PlayAIGameImage;
+
         public static string SaveFolderPath { get; private set; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Saves");
+        static StartWindow()
+        {
+        }
         public StartWindow()
         {
             InitializeComponent();
+            NewGameImage = Loader.LoadImage("references/newgame.png", NewGame.Size.Width, NewGame.Size.Height);
+            ContinueGameImage = Loader.LoadImage("references/Continue.png", ContinueGame.Width, ContinueGame.Height);
+            PlayAIGameImage = Loader.LoadImage("references/newgamevsai.png", PlayAIGame.Width, PlayAIGame.Height);
             txtSaveFolder.Text = SaveFolderPath;
+            NewGame.Image = NewGameImage; NewGame.Text = "";
+            NewGame.FlatStyle = FlatStyle.Flat;
+            NewGame.FlatAppearance.BorderSize = 0;
+
+            ContinueGame.Image = ContinueGameImage;ContinueGame.Text = "";
+            ContinueGame.FlatStyle = FlatStyle.Flat;
+            ContinueGame.FlatAppearance.BorderSize = 0;
+
+            PlayAIGame.Image = PlayAIGameImage; PlayAIGame.Text = "";
+            PlayAIGame.FlatStyle = FlatStyle.Flat;
+            PlayAIGame.FlatAppearance.BorderSize = 0;
         }
 
         private void SavesClick(object sender, EventArgs e)
@@ -57,7 +81,8 @@ namespace Сheckers
 
         private void PlayWithAIClick(object sender, EventArgs e)
         {
-            var NewGame = new GameWindow();
+            var AIgameState = new AIGameState(true);
+            var NewGame = new GameWindow(AIgameState);
             NewGame.IsAiGame = true;
 
             NewGame.FormClosed += (s, args) => this.Show();

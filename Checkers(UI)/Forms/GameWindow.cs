@@ -11,6 +11,7 @@ using Model.Core.Game;
 using Model.Core.Pieces;
 using Model.Core.Game.AI;
 using Сheckers.references;
+using System.Runtime.CompilerServices;
 
 namespace Сheckers
 {
@@ -22,13 +23,19 @@ namespace Сheckers
         private readonly static Image BlackFigure;
         private readonly static Image WhiteFigureQueen;
         private readonly static Image BlackFigureQueen;
-        private readonly static Image BackGround;
+        private readonly static Image WhitePlaceBackground;
+        private readonly static Image BlackPlaceBackground;
+        private readonly static Image WhitePlaceBackgroundHighlitedGreen;
+        private readonly static Image BlackPlaceBackgroundHighlitedGreen;
+        private readonly static Image WhitePlaceBackgroundHighlitedRed;
+        private readonly static Image BlackPlaceBackgroundHighlitedRed;
+        private readonly static Image OfferDraw;
 
         private GameState gameState;
         private Dictionary<(int, int), Button> buttons;
         private Button selectedButton = null;
-        private AIGameState AI;
-        public bool IsAiGame { get; set; }
+        //private AIGameState AI;
+        public bool IsAiGame { get; set; } = false;
         public int CellSize => cellSize;
         public int MapSize => mapSize;
         private void Form1_Load(object sender, EventArgs e)
@@ -52,7 +59,14 @@ namespace Сheckers
             BlackFigure = Loader.LoadImage("references/blackchecker.png", cellSize);
             WhiteFigureQueen = Loader.LoadImage("references/whiteking.png", cellSize);
             BlackFigureQueen = Loader.LoadImage("references/blackking.png", cellSize);
+            WhitePlaceBackground = Loader.LoadImage("references/checkers_board_stylized_White.png", cellSize);
+            BlackPlaceBackground = Loader.LoadImage("references/checkers_board_stylized_Black.png", cellSize);
 
+            WhitePlaceBackgroundHighlitedGreen = Loader.LoadImage("references/checkers_board_stylized_WhiteHighlited.png", cellSize);
+            BlackPlaceBackgroundHighlitedGreen = Loader.LoadImage("references/checkers_board_stylized_BlackHighlited.png", cellSize);
+
+            WhitePlaceBackgroundHighlitedRed = Loader.LoadImage("references/checkers_board_stylized_BlackHighlitedRed.png", cellSize);
+            BlackPlaceBackgroundHighlitedRed = Loader.LoadImage("references/checkers_board_stylized_BlackHighlitedRed.png", cellSize);
         }
         public GameWindow(GameState st)
         {
@@ -68,15 +82,7 @@ namespace Сheckers
             this.FormClosed += (s, args) => { };
             this.Text = "Checkers";
             GameState st = new GameState();
-            Init(st);
-        }
-        public GameWindow(AIGameState ai)
-        {
-            InitializeComponent();
-            AI = ai;
-            this.FormClosed += (s, args) => { };
-            this.Text = "Checkers";
-            GameState st = new GameState();
+            if (IsAiGame) st = new AIGameState(true);
             Init(st);
         }
         public void Init(GameState s)
@@ -103,11 +109,11 @@ namespace Сheckers
                     button.FlatAppearance.BorderSize = 0;
                     if ((i + j) % 2 != 0)
                     {
-                        button.BackColor = Color.Gray;
+                        button.BackgroundImage = BlackPlaceBackground;
                     }
                     else
                     {
-                        button.BackColor = Color.White;
+                        button.BackgroundImage = WhitePlaceBackground;
                     }
                     if (gameState.Map[i, j] == 1)
                     {
@@ -165,18 +171,17 @@ namespace Сheckers
                         ResetSelection();
                         gameState.SwitchPlayer();
                     }
+                    UpdateBoard();
                 }
                 else
                 {
                     FirstClick(pos, b);
                 }
             }
-            UpdateBoard();
             gameState.UpdateBoardMoves();
             GameState.Add(gameState);
             Debug.WriteLine(GameState.History.Count);
         }
-
         private void FirstClick((int row, int col) pos, Button b)
         {
             if (!gameState.Pieces.ContainsKey(pos))
@@ -203,19 +208,31 @@ namespace Сheckers
             if (!gameState.Pieces.ContainsKey(pos)) return;
             var piece = gameState.Pieces[pos];
             foreach (var eatPos in piece.Eats)
-                buttons[eatPos].BackColor = Color.Red;
+            {
+                buttons[eatPos].BackgroundImage = (eatPos.Item1 + eatPos.Item2) % 2 != 0
+                    ? BlackPlaceBackgroundHighlitedRed
+                    : WhitePlaceBackgroundHighlitedRed;
+            }
+
             if (piece.Eats.Length == 0)
                 foreach (var movePos in piece.Moves)
                 {
-                    buttons[movePos].BackColor = Color.LightGreen;
-                }            
+                    buttons[movePos].BackgroundImage = (movePos.Item1 + movePos.Item2) % 2 != 0
+                        ? BlackPlaceBackgroundHighlitedGreen
+                        : WhitePlaceBackgroundHighlitedGreen;
+                }
+            
         }
         private void ResetSelection()
         {
             selectedButton = null;
-            foreach (var pos in buttons.Keys)
+
+            foreach (var btn in buttons.Values)
             {
-                buttons[pos].BackColor = (pos.Item1 + pos.Item2) % 2 != 0 ? Color.Gray : Color.White;
+                var btnPos = (btn.Location.Y / cellSize, btn.Location.X / cellSize);
+                btn.BackgroundImage = (btnPos.Item1 + btnPos.Item2) % 2 != 0
+                    ? BlackPlaceBackground
+                    : WhitePlaceBackground;
             }
             selectedButton = null;
         }
@@ -224,13 +241,21 @@ namespace Сheckers
             if (IsAiGame)
             {
                 Debug.WriteLine("ITS AI TIME");
-                AI = new AIGameState(gameState, true);
-                AI.MakeAIMove(gameState);
+                if (gameState is AIGameState s) s.MakeAIMove();
+                else Debug.WriteLine("STRANGE..... NOT AN AI");
             }
-            foreach (var button in buttons.Values)
+            foreach (var button in buttons)
             {
-                button.Image = null;
-                button.Text = "";
+                if ((button.Key.Item1 + button.Key.Item2) % 2 != 0)
+                {
+                    button.Value.BackgroundImage = BlackPlaceBackground;
+                }
+                else
+                {
+                    button.Value.BackgroundImage = WhitePlaceBackground;
+                }
+                button.Value.Image = null;
+                button.Value.Text = "";
             }
             foreach (var pos in gameState.Pieces.Keys)
             {

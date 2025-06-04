@@ -17,5 +17,10 @@ namespace Сheckers.references
             string fullPath = Path.Combine(Application.StartupPath, relativePath);
             return new Bitmap(new Bitmap(fullPath), new Size(cellSize - 1, cellSize - 1));
         }
+        public static Bitmap LoadImage(string relativePath, int sizeX, int sizeY)
+        {
+            string fullPath = Path.Combine(Application.StartupPath, relativePath);
+            return new Bitmap(new Bitmap(fullPath), new Size(sizeX - 1, sizeY - 1));
+        }
     }
 }

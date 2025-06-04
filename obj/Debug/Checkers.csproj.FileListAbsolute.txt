@@ -56,3 +56,8 @@ C:\Users\denis\source\repos\Checkers\bin\Debug\Data\SaveLoad\IFileManager.cs
 C:\Users\denis\source\repos\Checkers\bin\Debug\Data\SaveLoad\SerializeGameJSON.cs
 C:\Users\denis\source\repos\Checkers\bin\Debug\Data\SaveLoad\SerializeGameXML.cs
 C:\Users\denis\source\repos\Checkers\bin\Debug\Data\SaveLoad\Serializer.cs
+C:\Users\denis\source\repos\Checkers\bin\Debug\references\checkers_board_stylized_White.png
+C:\Users\denis\source\repos\Checkers\bin\Debug\references\checkers_board_stylized_Black.png
+C:\Users\denis\source\repos\Checkers\bin\Debug\references\checkers_board_stylized_BlackHighlitedRed.png
+C:\Users\denis\source\repos\Checkers\bin\Debug\references\checkers_board_stylized_BlackHighlited.png
+C:\Users\denis\source\repos\Checkers\bin\Debug\references\checkers_board_stylized_WhiteHighlited.png

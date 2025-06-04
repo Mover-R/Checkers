@@ -3,40 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\denis\\source\\repos\\Checkers\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|c:\\users\\denis\\source\\repos\\checkers\\checkers(ui)\\forms\\startwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|solutionrelative:checkers(ui)\\forms\\startwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|c:\\users\\denis\\source\\repos\\checkers\\checkers(ui)\\forms\\startwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|solutionrelative:checkers(ui)\\forms\\startwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|c:\\users\\denis\\source\\repos\\checkers\\model\\data\\saveload\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\data\\saveload\\serializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\references\\loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|solutionrelative:references\\loader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\checkers(ui)\\forms\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|c:\\users\\denis\\source\\repos\\checkers\\checkers(ui)\\forms\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|solutionrelative:checkers(ui)\\forms\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\model\\core\\gamestate\\gamestate.core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\core\\gamestate\\gamestate.core.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\checkers(ui)\\forms\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|solutionrelative:checkers(ui)\\forms\\gamewindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\model\\core\\gamestate\\ai\\aigamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\core\\gamestate\\ai\\aigamestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\checkers(ui)\\forms\\startwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0F46D8FE-0E56-48F3-BA2C-9BE22A871FA9}|Checkers.csproj|solutionrelative:checkers(ui)\\forms\\startwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\model\\data\\saveload\\serializegamejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\data\\saveload\\serializegamejson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\model\\data\\saveload\\ifilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\data\\saveload\\ifilemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\model\\data\\saveload\\serializegamexml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\data\\saveload\\serializegamexml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|C:\\Users\\denis\\source\\repos\\Checkers\\model\\data\\saveload\\fileserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{886AC081-73C6-4B8B-B707-7746DD362823}|Model\\Model.csproj|solutionrelative:model\\data\\saveload\\fileserializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,65 +42,64 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameWindow.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\GameWindow.cs",
+              "RelativeDocumentMoniker": "Checkers(UI)\\Forms\\GameWindow.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\GameWindow.cs [Design]",
+              "RelativeToolTip": "Checkers(UI)\\Forms\\GameWindow.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:44:37.447Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AIGameState.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Core\\GameState\\AI\\AIGameState.cs",
+              "RelativeDocumentMoniker": "Model\\Core\\GameState\\AI\\AIGameState.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Core\\GameState\\AI\\AIGameState.cs",
+              "RelativeToolTip": "Model\\Core\\GameState\\AI\\AIGameState.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAwEAAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T14:45:47.274Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameState.Core.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Core\\GameState\\GameState.Core.cs",
+              "RelativeDocumentMoniker": "Model\\Core\\GameState\\GameState.Core.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Core\\GameState\\GameState.Core.cs",
+              "RelativeToolTip": "Model\\Core\\GameState\\GameState.Core.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T15:17:02.226Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "GameWindow.cs",
+              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\GameWindow.cs",
+              "RelativeDocumentMoniker": "Checkers(UI)\\Forms\\GameWindow.cs",
+              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\GameWindow.cs",
+              "RelativeToolTip": "Checkers(UI)\\Forms\\GameWindow.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-03T17:59:12.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "StartWindow.cs",
               "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\StartWindow.cs",
               "RelativeDocumentMoniker": "Checkers(UI)\\Forms\\StartWindow.cs",
               "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\StartWindow.cs",
               "RelativeToolTip": "Checkers(UI)\\Forms\\StartWindow.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADYAAAAAAAAAAAAuwEkAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:08:26.828Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "StartWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\StartWindow.cs",
-              "RelativeDocumentMoniker": "Checkers(UI)\\Forms\\StartWindow.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\StartWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Checkers(UI)\\Forms\\StartWindow.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T21:08:20.793Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Loader.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\references\\Loader.cs",
-              "RelativeDocumentMoniker": "references\\Loader.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\references\\Loader.cs",
-              "RelativeToolTip": "references\\Loader.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:58:12.003Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Serializer.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\Serializer.cs",
-              "RelativeDocumentMoniker": "Model\\Data\\SaveLoad\\Serializer.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\Serializer.cs",
-              "RelativeToolTip": "Model\\Data\\SaveLoad\\Serializer.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAqwBcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:53:21.4Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SerializeGameXML.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\SerializeGameXML.cs",
-              "RelativeDocumentMoniker": "Model\\Data\\SaveLoad\\SerializeGameXML.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\SerializeGameXML.cs",
-              "RelativeToolTip": "Model\\Data\\SaveLoad\\SerializeGameXML.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:57:00.209Z"
+              "WhenOpened": "2025-06-03T21:08:26.828Z"
             },
             {
               "$type": "Document",
@@ -122,45 +109,9 @@
               "RelativeDocumentMoniker": "Model\\Data\\SaveLoad\\SerializeGameJSON.cs",
               "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\SerializeGameJSON.cs",
               "RelativeToolTip": "Model\\Data\\SaveLoad\\SerializeGameJSON.cs",
-              "ViewState": "AgIAAD4AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAADYAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-03T20:56:54.274Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IFileManager.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\IFileManager.cs",
-              "RelativeDocumentMoniker": "Model\\Data\\SaveLoad\\IFileManager.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\IFileManager.cs",
-              "RelativeToolTip": "Model\\Data\\SaveLoad\\IFileManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:56:52.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "FileSerializer.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\FileSerializer.cs",
-              "RelativeDocumentMoniker": "Model\\Data\\SaveLoad\\FileSerializer.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Model\\Data\\SaveLoad\\FileSerializer.cs",
-              "RelativeToolTip": "Model\\Data\\SaveLoad\\FileSerializer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T20:56:48.706Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GameWindow.cs",
-              "DocumentMoniker": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\GameWindow.cs",
-              "RelativeDocumentMoniker": "Checkers(UI)\\Forms\\GameWindow.cs",
-              "ToolTip": "C:\\Users\\denis\\source\\repos\\Checkers\\Checkers(UI)\\Forms\\GameWindow.cs",
-              "RelativeToolTip": "Checkers(UI)\\Forms\\GameWindow.cs",
-              "ViewState": "AgIAABEBAAAAAAAAAADwvzQBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-03T17:59:12.865Z"
             }
           ]
         }
