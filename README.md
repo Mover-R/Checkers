@@ -79,7 +79,7 @@
    Открывает диалог выбора файла сохранения (JSON или XML). После выбора и нажатия **Continue** игра восстанавливается в том же состоянии.
 
 Главное меню
-[image](https://github.com/user-attachments/assets/06dd3a7c-12ae-4ee5-9651-424785e1cf08)
+![image]!(https://github.com/user-attachments/assets/06dd3a7c-12ae-4ee5-9651-424785e1cf08)
 
 ---
 
