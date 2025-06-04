@@ -178,7 +178,7 @@
 
 ---
 
-> **Автор:** Mover-R
+> **Авторы:** Mover-R, blx000
 >
 > Репозиторий: [https://github.com/Mover-R/Checkers](https://github.com/Mover-R/Checkers)
 >
