@@ -22,13 +22,15 @@ namespace Сheckers
         public static Serializer serializerJSON = new SerializeGameJSON();
         public static Serializer serializerXML = new SerializeGameXML();
         private bool serializeJSON = true;
-        private bool serializeXML = true;
-
+        private bool serializeXML = false;
+        
         private Bitmap NewGameImage;
         private Bitmap ContinueGameImage;
         private Bitmap PlayAIGameImage;
 
         public static string SaveFolderPath { get; private set; } = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Saves");
+        public bool SerializeJson => serializeJSON;
+        public bool SerializeXML => serializeXML;
         static StartWindow()
         {
         }
@@ -59,7 +61,7 @@ namespace Сheckers
 
         private void ContinueClick(object sender, EventArgs e)
         {
-            var game = serializerJSON.DeSerializeGame();
+            var game = serializerXML.DeSerializeGame();
 
             var NewGame = new GameWindow(game);
 
@@ -122,5 +124,6 @@ namespace Сheckers
         {
             serializeXML = !serializeXML;
         }
+
     }
 }

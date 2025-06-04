@@ -115,6 +115,7 @@ namespace Сheckers
         {
             Debug.WriteLine(StartWindow.SaveFolderPath);
             StartWindow.serializerJSON.SerializeGame(this.gameState);
+            StartWindow.serializerXML.SerializeGame(this.gameState);
         }
         private void ForwardClick(object sender, EventArgs e)
         {

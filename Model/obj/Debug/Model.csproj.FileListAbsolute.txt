@@ -21,3 +21,17 @@ C:\Users\denis\source\repos\Checkers\Model\bin\Debug\Data\SaveLoad\IFileManager.
 C:\Users\denis\source\repos\Checkers\Model\bin\Debug\Data\SaveLoad\SerializeGameJSON.cs
 C:\Users\denis\source\repos\Checkers\Model\bin\Debug\Data\SaveLoad\SerializeGameXML.cs
 C:\Users\denis\source\repos\Checkers\Model\bin\Debug\Data\SaveLoad\Serializer.cs
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Data\SaveLoad\FileSerializer.cs
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Data\SaveLoad\IFileManager.cs
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Data\SaveLoad\SerializeGameJSON.cs
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Data\SaveLoad\SerializeGameXML.cs
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Data\SaveLoad\Serializer.cs
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Model.dll
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Model.pdb
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Admin\source\repos\Cheks\Model\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Admin\source\repos\Cheks\Model\obj\Debug\Model.csproj.AssemblyReference.cache
+C:\Users\Admin\source\repos\Cheks\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\Cheks\Model\obj\Debug\Model.csproj.Up2Date
+C:\Users\Admin\source\repos\Cheks\Model\obj\Debug\Model.dll
+C:\Users\Admin\source\repos\Cheks\Model\obj\Debug\Model.pdb

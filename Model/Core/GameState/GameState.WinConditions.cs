@@ -47,8 +47,8 @@ namespace Model.Core.Game
             if (!OfferDrawWhite)
                 return false;
 
-            int aiScore = (this as AIGameState).CalculateScore((this as AIGameState).IsPlayerWhite);
-            int playerScore = (this as AIGameState).CalculateScore((this as AIGameState).IsPlayerWhite);
+            int aiScore = (this as AIGameState).CalculateScore(false);
+            int playerScore = (this as AIGameState).CalculateScore(true);
 
             return aiScore <= playerScore;
         }

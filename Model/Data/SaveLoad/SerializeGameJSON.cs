@@ -52,10 +52,8 @@ namespace Model.Data.SaveLoad
 
             try
             {
-                // Десериализуем DTO
                 var dto = JsonConvert.DeserializeObject<GameStateDTO>(File.ReadAllText(FilePath));
 
-                // Конвертируем DTO обратно в GameState
                 var pieces = new Dictionary<(int, int), Piece>();
 
                 foreach (var pieceDto in dto.Pieces)
