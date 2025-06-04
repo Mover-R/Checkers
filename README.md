@@ -78,8 +78,8 @@
 3. **Продолжить игру**
    Открывает диалог выбора файла сохранения (JSON или XML). После выбора и нажатия **Continue** игра восстанавливается в том же состоянии.
 
-Главное меню
-![image]!(https://github.com/user-attachments/assets/06dd3a7c-12ae-4ee5-9651-424785e1cf08)
+![Главное меню](![image](https://github.com/user-attachments/assets/5144ed7a-6e5d-46f7-9025-782a78ea7090)
+)
 
 ---
 
@@ -103,9 +103,8 @@
 * Счёт шашек (сколько осталось обычных и дамок).
 * При игре с AI ход компьютера автоматически выполняется после вашего хода.
 
-Игровое окно
-[image](https://github.com/user-attachments/assets/c39a8cff-7a4a-4a3d-9e16-cd27de653b70)
-
+![Игровое окно](![image](https://github.com/user-attachments/assets/4fcdfbaf-f6a5-411b-b185-e22da1a97084)
+)
 
 ---
 
