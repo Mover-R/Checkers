@@ -14,7 +14,8 @@ namespace Model.Core.Game
         private bool OfferDrawBlack { get; set; } = false;
         public int CheckWin()
         {
-            Debug.WriteLine($"{CanMove()}, {CountWhite}, {CountBlack}, {CheckDraw()}");
+            //Debug.WriteLine($"{CanMove()}, {CountWhite}, {CountBlack}, {CheckDraw()} {(this is AIGameState)} {ShouldAIAcceptDraw()} ");
+            if ((this is AIGameState) && ShouldAIAcceptDraw()) return 3; 
             if (CheckDraw()) return 3;
             if (!CanMove() && !CanEat()) return CountWhite - CountBlack > 0 ? 1 : 2;
             if (CountWhite == 0) return 2;
@@ -28,7 +29,7 @@ namespace Model.Core.Game
         public void WhiteDraw()
         {
             OfferDrawWhite = !OfferDrawWhite;
-            Debug.WriteLine(OfferDrawWhite);
+            Debug.WriteLine($"WHITE OFFERS DRAW {OfferDrawWhite}");
         }
         public void BlackDraw()
         {
@@ -40,15 +41,15 @@ namespace Model.Core.Game
             Debug.WriteLine("Removed Draw");
             OfferDrawWhite = false; OfferDrawBlack= false;
         }
-        public bool ShouldAIAcceptDraw(AIGameState aiGame)
+        public bool ShouldAIAcceptDraw()
         {
-            if (!(aiGame.IsAITurn && (OfferDrawWhite || OfferDrawBlack)))
+            Debug.WriteLine($"WHY WHITE OFFERS? {OfferDrawWhite}");
+            if (!OfferDrawWhite)
                 return false;
 
-            int aiScore = aiGame.CalculateScore(aiGame.IsPlayerWhite);
-            int playerScore = aiGame.CalculateScore(aiGame.IsPlayerWhite);
+            int aiScore = (this as AIGameState).CalculateScore((this as AIGameState).IsPlayerWhite);
+            int playerScore = (this as AIGameState).CalculateScore((this as AIGameState).IsPlayerWhite);
 
-            // Компьютер соглашается на ничью, если у него меньше очков
             return aiScore <= playerScore;
         }
     }

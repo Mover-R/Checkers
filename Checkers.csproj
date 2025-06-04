@@ -49,6 +49,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Checkers%28UI%29\Forms\GameWindow\GameWindow.Logic.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Checkers%28UI%29\Forms\StartWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,16 +64,16 @@
     <Compile Include="Checkers%28UI%29\Forms\InformationTable.Designer.cs">
       <DependentUpon>InformationTable.cs</DependentUpon>
     </Compile>
-    <Compile Include="Checkers%28UI%29\Forms\GameWindow.cs">
+    <Compile Include="Checkers%28UI%29\Forms\GameWindow\GameWindow.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Checkers%28UI%29\Forms\GameWindow.Designer.cs">
+    <Compile Include="Checkers%28UI%29\Forms\GameWindow\GameWindow.Designer.cs">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </Compile>
     <Compile Include="Checkers%28UI%29\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="references\Loader.cs" />
-    <EmbeddedResource Include="Checkers%28UI%29\Forms\GameWindow.resx">
+    <EmbeddedResource Include="Checkers%28UI%29\Forms\GameWindow\GameWindow.resx">
       <DependentUpon>GameWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Checkers%28UI%29\Forms\StartWindow.resx">

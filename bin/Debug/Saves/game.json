@@ -17,7 +17,7 @@
       0,
       2,
       0,
-      2,
+      0,
       0
     ],
     [
@@ -37,7 +37,7 @@
       0,
       0,
       0,
-      2,
+      0,
       0
     ],
     [
@@ -48,16 +48,16 @@
       0,
       0,
       0,
-      1
+      0
     ],
     [
       1,
       0,
       1,
       0,
-      1,
       0,
       0,
+      2,
       0
     ],
     [
@@ -126,12 +126,6 @@
     },
     {
       "Type": "Man",
-      "Row": 1,
-      "Col": 6,
-      "Color": false
-    },
-    {
-      "Type": "Man",
       "Row": 2,
       "Col": 1,
       "Color": false
@@ -140,12 +134,6 @@
       "Type": "Man",
       "Row": 2,
       "Col": 3,
-      "Color": false
-    },
-    {
-      "Type": "Man",
-      "Row": 3,
-      "Col": 6,
       "Color": false
     },
     {
@@ -169,14 +157,8 @@
     {
       "Type": "Man",
       "Row": 5,
-      "Col": 4,
-      "Color": true
-    },
-    {
-      "Type": "Man",
-      "Row": 4,
-      "Col": 7,
-      "Color": true
+      "Col": 6,
+      "Color": false
     },
     {
       "Type": "Man",

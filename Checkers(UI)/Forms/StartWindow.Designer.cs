@@ -39,6 +39,9 @@
             this.JSON = new System.Windows.Forms.CheckBox();
             this.XML = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ContinueWithYourFile = new System.Windows.Forms.Button();
+            this.txtLoadGameFile = new System.Windows.Forms.TextBox();
+            this.btnBrowseFile = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // NewGame
@@ -53,9 +56,9 @@
             // 
             // ContinueGame
             // 
-            this.ContinueGame.Location = new System.Drawing.Point(184, 178);
+            this.ContinueGame.Location = new System.Drawing.Point(77, 169);
             this.ContinueGame.Name = "ContinueGame";
-            this.ContinueGame.Size = new System.Drawing.Size(506, 129);
+            this.ContinueGame.Size = new System.Drawing.Size(365, 129);
             this.ContinueGame.TabIndex = 1;
             this.ContinueGame.Text = "Continue";
             this.ContinueGame.UseVisualStyleBackColor = true;
@@ -63,7 +66,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(22, 178);
+            this.button3.Location = new System.Drawing.Point(24, 315);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(141, 128);
             this.button3.TabIndex = 2;
@@ -83,7 +86,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(713, 178);
+            this.button5.Location = new System.Drawing.Point(713, 314);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(140, 129);
             this.button5.TabIndex = 4;
@@ -141,11 +144,39 @@
             this.label1.TabIndex = 9;
             this.label1.Text = "Choose How to Save your games";
             // 
+            // ContinueWithYourFile
+            // 
+            this.ContinueWithYourFile.Location = new System.Drawing.Point(639, 197);
+            this.ContinueWithYourFile.Name = "ContinueWithYourFile";
+            this.ContinueWithYourFile.Size = new System.Drawing.Size(177, 101);
+            this.ContinueWithYourFile.TabIndex = 10;
+            this.ContinueWithYourFile.Text = "Continue";
+            this.ContinueWithYourFile.UseVisualStyleBackColor = true;
+            // 
+            // txtLoadGameFile
+            // 
+            this.txtLoadGameFile.Location = new System.Drawing.Point(451, 169);
+            this.txtLoadGameFile.Name = "txtLoadGameFile";
+            this.txtLoadGameFile.Size = new System.Drawing.Size(365, 22);
+            this.txtLoadGameFile.TabIndex = 11;
+            // 
+            // btnBrowseFile
+            // 
+            this.btnBrowseFile.Location = new System.Drawing.Point(451, 197);
+            this.btnBrowseFile.Name = "btnBrowseFile";
+            this.btnBrowseFile.Size = new System.Drawing.Size(182, 101);
+            this.btnBrowseFile.TabIndex = 12;
+            this.btnBrowseFile.Text = "Brows...";
+            this.btnBrowseFile.UseVisualStyleBackColor = true;
+            // 
             // StartWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 494);
+            this.Controls.Add(this.btnBrowseFile);
+            this.Controls.Add(this.txtLoadGameFile);
+            this.Controls.Add(this.ContinueWithYourFile);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.XML);
             this.Controls.Add(this.JSON);
@@ -176,5 +207,8 @@
         private System.Windows.Forms.CheckBox JSON;
         private System.Windows.Forms.CheckBox XML;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button ContinueWithYourFile;
+        private System.Windows.Forms.TextBox txtLoadGameFile;
+        private System.Windows.Forms.Button btnBrowseFile;
     }
 }

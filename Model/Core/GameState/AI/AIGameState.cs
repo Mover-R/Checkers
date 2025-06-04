@@ -68,7 +68,7 @@ namespace Model.Core.Game.AI
             foreach (var p in this.Pieces.Values)
             {
                 if (p.Color == IsAITurn) continue;
-                Debug.WriteLine($"{p.Color} {p.Eats.Length} {p.Moves.Length}");
+                //Debug.WriteLine($"{p.Color} {p.Eats.Length} {p.Moves.Length}");
                 foreach (var m in p.Eats)
                 {
                     Debug.WriteLine(m);
@@ -80,7 +80,7 @@ namespace Model.Core.Game.AI
                     move.Add((p.Position, m));
                 }
             }
-            Debug.WriteLine($"{eat.Count}  {move.Count}  {string.Join(", ", eat)}  {string.Join(", ", move)}");
+            //Debug.WriteLine($"{eat.Count}  {move.Count}  {string.Join(", ", eat)}  {string.Join(", ", move)}");
             return (eat.Count > 0, eat.Count > 0 ? eat : move);
         }
 
